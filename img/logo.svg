@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00b4d8"/>
+      <stop offset="100%" style="stop-color:#48cae4"/>
+    </linearGradient>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628"/>
+      <stop offset="100%" style="stop-color:#1a365d"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#48cae4;stop-opacity:0.6"/>
+      <stop offset="50%" style="stop-color:#ffffff;stop-opacity:0.9"/>
+      <stop offset="100%" style="stop-color:#48cae4;stop-opacity:0.6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Shield Shape -->
+  <path d="M256 28 C256 28, 440 60, 460 80 C480 100, 484 180, 484 220 C484 340, 400 440, 256 492 C112 440, 28 340, 28 220 C28 180, 32 100, 52 80 C72 60, 256 28, 256 28Z" fill="url(#grad2)" stroke="url(#grad1)" stroke-width="6"/>
+
+  <!-- Inner glow ring -->
+  <path d="M256 60 C256 60, 420 88, 436 104 C452 120, 456 190, 456 224 C456 328, 382 416, 256 460 C130 416, 56 328, 56 224 C56 190, 60 120, 76 104 C92 88, 256 60, 256 60Z" fill="none" stroke="url(#grad1)" stroke-width="2" opacity="0.3"/>
+
+  <!-- Letter T - stylized -->
+  <g transform="translate(256, 210)">
+    <!-- T crossbar -->
+    <rect x="-95" y="-80" width="190" height="32" rx="16" fill="url(#grad1)"/>
+    <!-- T stem -->
+    <rect x="-18" y="-52" width="36" height="140" rx="18" fill="url(#grad1)"/>
+    <!-- T stem bottom detail -->
+    <rect x="-26" y="68" width="52" height="24" rx="12" fill="url(#grad1)" opacity="0.7"/>
+  </g>
+
+  <!-- Sparkle/cleaning stars -->
+  <!-- Top right sparkle -->
+  <g transform="translate(360, 140)">
+    <path d="M0 -20 L5 -5 L20 0 L5 5 L0 20 L-5 5 L-20 0 L-5 -5Z" fill="#ffffff" opacity="0.9"/>
+  </g>
+  <!-- Small sparkle -->
+  <g transform="translate(155, 150)">
+    <path d="M0 -12 L3 -3 L12 0 L3 3 L0 12 L-3 3 L-12 0 L-3 -3Z" fill="#48cae4" opacity="0.8"/>
+  </g>
+  <!-- Bottom sparkle -->
+  <g transform="translate(340, 320)">
+    <path d="M0 -10 L2.5 -2.5 L10 0 L2.5 2.5 L0 10 L-2.5 2.5 L-10 0 L-2.5 -2.5Z" fill="#ffffff" opacity="0.7"/>
+  </g>
+
+  <!-- Water droplet accent -->
+  <g transform="translate(190, 310)">
+    <path d="M0 -24 C0 -24, 18 0, 18 14 C18 24, 10 32, 0 32 C-10 32, -18 24, -18 14 C-18 0, 0 -24, 0 -24Z" fill="url(#grad1)" opacity="0.5"/>
+  </g>
+
+  <!-- "CLEANING SOLUTIONS" text arc hint - decorative line -->
+  <path d="M130 400 Q256 430, 382 400" fill="none" stroke="url(#grad1)" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Small circles decoration -->
+  <circle cx="130" cy="400" r="4" fill="#00b4d8" opacity="0.8"/>
+  <circle cx="382" cy="400" r="4" fill="#00b4d8" opacity="0.8"/>
+</svg>
